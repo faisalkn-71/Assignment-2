@@ -39,7 +39,7 @@ body{
 }
 
 
-/* header css */
+/* nav css */
 
 .navigation{
     display: flex;
@@ -156,7 +156,7 @@ nav .navigation .anchor a{
     color: #E02C6DDE;
 }
 
-/* Special-shop */
+/* Special-shop css */
 
 .super-shop{
     display: flex;
@@ -191,7 +191,7 @@ nav .navigation .anchor a{
     font-weight: bold;
 }
 
-/* footer */
+/* footer css */
 
 footer{
     width: 100%;
@@ -215,7 +215,9 @@ footer p{
     padding: 5px 5px;
 }
 
-/* Media quries */
+/* ------------------
+      Media quries 
+---------------------*/
 
 /* mobile devices */
 
