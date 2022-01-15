@@ -61,7 +61,9 @@ nav .navigation .anchor a{
 /* influencer css */
 
 .influencer{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     justify-content: center;
 }
 .influencer-left{
@@ -85,15 +87,17 @@ nav .navigation .anchor a{
     background-image: url("../images/Circle design.svg");
     background-repeat: no-repeat;
     background-position: center;
-    padding: 60px 0;
+   
 }
 .influencer-right, img{
-    width: 70%;
+    width: 100%;
     justify-content: center;
-    padding-left: 60px;
+    align-items: center;
+  
     
     
 }
+
 
 /* collection css */
 
@@ -150,14 +154,21 @@ nav .navigation .anchor a{
     display: flex;
     justify-content: center;
     align-items: center;
+   
+}
+.shop-photo, .shop-detail{
     padding: 10px 20px;
+
 }
 .shop-photo{
     background-image: url("../images/shape-1.png");
     background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 300px;
+    background-position: left;
+    background-size: 200px;
 
+}
+.shop-photo img{
+    width: 100%;
 }
 
 .shop-title{
@@ -186,4 +197,54 @@ footer p{
     background-color: rgba(83, 63, 63, 0.582);
     border-radius: 40%;
     padding: 5px 5px;
+}
+
+/* Media quries */
+
+/* mobile devices */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    nav .navigation .anchor{
+        display: none;
+    }
+    .influencer{
+      
+        grid-template-columns: 1fr;
+        gap:30px;
+    }
+    .items{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .super-shop{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* tablet devices */
+    @media only screen and (min-width:689px) and (max-width:992px) {
+        .container{
+            width: 100%;
+        }
+        nav .navigation .anchor{
+            display: none;
+        }
+        .influencer{
+          
+            grid-template-columns: 1fr;
+            gap:30px;
+        }
+        .items{
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+
+        }
+        
+    
 }
