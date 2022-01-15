@@ -31,10 +31,13 @@ body{
     top: 5px;
     box-shadow: 0 2px 0 #611430;
 }
-span{
-    color: orange;
-    font-weight: bold;
+.bigger:hover{
+    color: yellow;
+   font-weight: 900;
+   background-color: black;
+   padding: 10px 20px;
 }
+
 
 /* header css */
 
@@ -92,10 +95,11 @@ nav .navigation .anchor a{
 .influencer-right, img{
     width: 100%;
     justify-content: center;
-    align-items: center;
-  
-    
-    
+    align-items: center; 
+    transition: transform .9s ease-in-out;
+}
+.influencer-right:hover img{
+    transform: rotate(360deg);
 }
 
 
@@ -127,6 +131,10 @@ nav .navigation .anchor a{
     width: 300px;
     height: 256px;
     padding: 0;
+    transition: transform .7s ease-in-out;
+}
+.item-pic:hover img{
+    transform: scale(1.3);
 }
 .fa-star.filled{
     font-size: 16px;
@@ -169,10 +177,18 @@ nav .navigation .anchor a{
 }
 .shop-photo img{
     width: 100%;
+    transition: transform .7s ease;
+}
+.shop-photo:hover img{
+    transform: scale(1.5) skew(-15deg);
 }
 
 .shop-title{
     font-size: 38px;
+}
+.shop-name{
+    color: orange;
+    font-weight: bold;
 }
 
 /* footer */
